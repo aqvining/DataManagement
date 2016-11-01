@@ -12,3 +12,7 @@ eps = rnorm(1000,0, 10) #1000 residuals drawn from normal distribution around ze
 x = runif(1000, 0, 100)
 y = m*x + b + eps
 plot(x,y, cex = .5, col = "blue")
+
+###
+
+abline(lm(y~x), lty = 2, col = "red")
